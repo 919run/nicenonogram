@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>How to play</title>
+		<link rel="stylesheet" href="how_to_play_style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="top_buttons">
+
+			<input type="button" class="top-button" value="JP" onclick="window.open('how_to_play_JP.html')">
+			<input type="button" class="top-button" value="Game" onclick="window.open('index.html')">
+
+		</div>
+
+		<h1>How to play</h1>
+		<div id="main_container">
+
+			<div>
+				<h3>Basics</h3>
+				
+				<p>To solve this puzzle you need to fill in the dots marked with numbers at the top and left side of the table. The numbers indicate how many dots you need to fill in both the row and the column. To know where to fill the dots, match up the row and column. Once the puzzle is solved, the filled dots become the picture.</p>
+
+				<img src="ug_ng_how_to_play_sc_1.png">
+
+				<p>Sometimes there is more that 1 number, it means that there are 1 or more unfilled dots between few dots that is have filled one by one.</p>
+
+				<img src="ug_ng_how_to_play_sc_2.png">
+
+				<p>Another example.</p>
+				<img src="ug_ng_how_to_play_sc_2_2.png">
+			</div>
+
+			<div>
+				<h3>Hints</h3>
+				
+				<p>I made some hints to make this game less time consuming. So there are few marks that show, what dots is to be filled. I hope it will help to not get lost,
+				and leave less space for assumption.</p>
+			</div>
+
+			<div>
+				<h3>Dot counter</h3>
+				
+				<p>Also I implemented the counter, that shows how much correct and incorrect dots are filled, so it is possible to know when exactly incorrect dot is filled, 
+				to not to start over from the beginning. Puzzle is solved when there is 101 correct dots, and 0 incorrect dots.</p>
+
+				<img src="ug_ng_how_to_play_sc_3.png">
+			</div>
+
+			<div>
+				<h3>Symmetry</h3>
+				
+				<p>If you look at the upper part of the table, where numbers in columns are marked, you can notice that they are almost same on the right and left from the center.
+				It means, that image in the puzzle is almost symmetrical and dots that are filled on one side are most of the times will be filled on the other side. It leaves on only half of the puzzle to be solved. (In this particular nonogram!).</p>
+
+				<img src="ug_ng_how_to_play_sc_4.png">
+			</div>
+
+			<div>
+				<h3>Right click mark</h3>
+				
+				<p>It is possible to mark dots that is figured out to not to be filled with color. 
+				Marking empty dots is important part of solving nonograms, it will
+				help to see what to do in uncertain areas.</p>
+
+				<img src="ug_ng_how_to_play_sc_5.png">
+			</div>
+
+
+		</div>
+	</body>
+</html>
+

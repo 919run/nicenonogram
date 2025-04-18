@@ -1,0 +1,174 @@
+body {
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+
+#top_buttons {
+
+	position: fixed;
+	top:10px;
+	right: 20px;
+
+}
+
+.top-button {
+
+
+}
+
+#genius {
+
+	font-size: 50px;
+  color: pink;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  padding-left: 8.8%;
+
+}
+
+#game_container {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	font-family: "Open Sans", serif;
+	font-size:14px;
+	font-weight: 100;
+	font-style: normal;
+
+}
+
+#numbers_table th{
+	
+	width:20px;
+	height: 22px;
+	
+}
+
+#picture_table {
+
+	background: aliceblue;
+	color: transparent;
+
+}
+
+#picture_table th {
+
+	cursor: pointer;
+	border:1px solid grey;
+
+}
+
+#row_table th {
+
+	min-width: 120px;
+	height: 23.6px;
+	text-align: right;
+	padding-right: 8px;
+
+}
+
+#column_table th {
+
+	vertical-align: bottom;
+	padding-bottom: 8px;
+
+}
+
+#column_table th:nth-child(even){
+
+	background-color: lightpink;
+
+}
+
+#row_table tr:nth-child(even) {
+
+	background-color: lightpink;
+
+}
+
+#info_container {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#cp_count_outer, #ucp_count_outer {
+
+	padding: 2px 8px;
+
+}
+
+#cp_count_mark{
+
+	color: green;
+
+}
+
+#ucp_count_mark {
+
+	color: red;
+
+}
+
+#cp_count_mark, #ucp_count_mark {
+
+	font-size: 26px;
+
+}
+
+#pp_count_outer {
+
+	margin-bottom: 2px;
+}
+
+.toggle_button {
+	background-color:#3db05c;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:2px 18px;
+	text-decoration:none;
+}
+.toggle_button:hover {
+	background-color:#5aa433;
+}
+.toggle_button:active {
+	position:relative;
+	top:1px;
+}
+
+#right_flowers {
+
+	position: absolute;
+	top: 70px;
+	right: 20px;
+
+}
+
+#left_flowers {
+
+	position: absolute;
+	bottom: 70px;
+	left: 20px;
+
+}
+
+.small-flower img{
+
+	width: 100px;
+	height: 100px;
+	margin: 80px;
+
+}

@@ -1,0 +1,16 @@
+body {
+
+	padding: 20px;
+	background-color: #fff7f8;
+	font-family: "Noto Sans JP", serif;
+	font-family: "Open Sans", serif;
+
+}
+
+#top_buttons {
+
+	position: fixed;
+	top:10px;
+	right: 20px;
+
+}

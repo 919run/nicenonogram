@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp">
+	<head>
+		<meta charset="UTF-8">
+		<title>遊び方</title>
+		<link rel="stylesheet" href="how_to_play_style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="top_buttons">
+
+			<input type="button" class="top-button" value="英語" onclick="window.open('how_to_play_EN.html')">
+			<input type="button" class="top-button" value="ゲーム" onclick="window.open('index.html')">
+
+		</div>
+
+		<h1>遊び方</h1>
+		<div id="main_container">
+
+			<div>
+				<h3>基本ルール</h3>
+				
+				<p>このパズルを解くには、表の上部と左側にある数字でマークされたドット（マス目）を塗り潰す必要があります。数字は、行と列の両方に塗り潰す必要があるドット（マス目）の数を示しています。ドット（マス目）を塗り潰す場所を知るには、行と列を一致させます。パズルが解かれると、塗り潰れた点が絵になります。</p>
+
+				<img src="ug_ng_how_to_play_sc_1.png">
+
+				<p>たまには 1 桁を超える数字がある場合、それは塗りつぶされたドット（マス目）の間に 1 つ以上の塗りつぶされていないドット（マス目）があるのことです。</p>
+
+				<img src="ug_ng_how_to_play_sc_2.png">
+
+				<p>もう一つの例。</p>
+				<img src="ug_ng_how_to_play_sc_2_2.png">
+			</div>
+
+			<div>
+				<h3>ヒント</h3>
+				
+				<p>このゲームにあまり時間がかからないように、ヒントをいくつか作りました。どのドット（マス目）を塗りつぶすかを示すマークがいくつかあります。迷子にならないように、また推測の余地を減らすのに役立つことを願っています。</p>
+			</div>
+
+			<div>
+				<h3>ドット（マス目）カウンター</h3>
+				
+				<p>正しいドット（マス目）と間違ったドット（マス目）がどれだけ塗りつぶされたかを示すカウンターを実装しました。これにより、間違ったドット（マス目）が正確にいつ塗りつぶされたかを知ることができます、最初からやり直さなくて済みます。正しいドット（マス目）が 101 個、間違ったドット（マス目）が 0 個になると、パズルは解けます。</p>
+
+				<img src="ug_ng_how_to_play_sc_3.png">
+			</div>
+
+			<div>
+				<h3>対称</h3>
+				
+				<p>表の上部、列の数字がマークされている部分を見ると、中央から見て左右で数字がほぼ同じであることがわかります。
+				これは、パズルの画像がほぼ対称であり、片側で塗りつぶされたドット（マス目）は、ほとんどの場合、反対側でも塗りつぶされることを意味します。パズルを解くのは半分だけです。(このノノグラムでは！)。</p>
+
+				<img src="ug_ng_how_to_play_sc_4.png">
+			</div>
+
+			<div>
+				<h3>右クリックでマーク</h3>
+				
+				<p>塗りつぶされていないドット（マス目）をマークすることができます。
+				塗りつぶされていないドットをマークすることは、ノノグラムを解く上で重要な部分であり、不明な部分で何をするべきかを分かってるのに役立ちます。</p>
+
+				<img src="ug_ng_how_to_play_sc_5.png">
+			</div>
+
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="UTF-8">
+		<title>うどんちゃんのお絵かきロジックファンゲーム</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-3.7.1.js"></script>
+		<script src="puzzle_script_jq.js"></script>
+		
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<div id="top_buttons">
+
+			<input type="button" class="top-button" value="ヘルプ" onclick="window.open('how_to_play_JP.html')">
+			<input type="button" class="top-button" value="ヘルプ(EN)" onclick="window.open('how_to_play_EN.html')">
+
+		</div>
+
+		<div id="right_flowers">
+			
+			<div class="background-flowers">
+
+				<div class="big-flower">
+
+					<img src="pink_flower.png">
+
+				</div>
+
+				<div class="small-flower">
+
+					<img src="pink_flower.png">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="left_flowers">
+			
+			<div class="background-flowers">
+
+				<div class="small-flower">
+
+					<img src="pink_flower.png">
+
+				</div>
+
+				<div class="big-flower">
+
+					<img src="pink_flower.png">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="game_container">
+
+			<div id="picture_container">
+
+				<table id="numbers_table" cellspacing="0">
+
+					<tr>
+
+						<th style="vertical-align: bottom;">
+
+							<div id="info_container">
+
+								<div id="cp_count_outer">
+
+									<div id="cp_count_mark">✔</div>
+									<div id="cp_count">0</div>
+
+								</div>
+
+								<div id="ucp_count_outer">
+
+									<div id="ucp_count_mark">🗙</div>
+									<div id="ucp_count">0</div>
+
+								</div>
+
+							</div>
+
+							<div id="pp_count_outer">
+
+								<button id="pp_toggle_button" class="toggle_button">toggle</button>
+
+							</div>
+
+						</th>
+
+						<th>
+
+						<table id="column_table" cellspacing="0" style="width:100%; margin: 0px;" >
+
+							<tr>
+								
+								<th id="c1"><div>0</div></th>
+								<th id="c2"><div>1</div></th>
+								<th id="c3"><div>2</div></th>
+								<th id="c4"><div>1</div></th>
+								<th id="c5"><div>11</div></th>
+								<th id="c6"><div>5</div><div>1</div><div>1</div></th>
+								<th id="c7"><div>1</div><div>1</div><div>1</div></th>
+								<th id="c8"><div>2</div><div>2</div><div>1</div></th>
+								<th id="c9"><div>1</div><div>1</div><div>2</div><div>1</div></th>
+								<th id="c10"><div>1</div><div>1</div><div>3</div><div>1</div></th>
+								<th id="c11"><div>1</div><div>2</div><div>1</div><div>1</div></th>
+								<th id="c12"><div>1</div><div>1</div><div>1</div><div>1</div></th>
+								<th id="c13"><div>1</div><div>1</div><div>1</div><div>1</div></th>
+								<th id="c14"><div>1</div><div>3</div><div>1</div><div>1</div></th>
+								<th id="c15"><div>1</div><div>1</div><div>2</div><div>1</div></th>
+								<th id="c16"><div>1</div><div>2</div><div>2</div><div>1</div></th>
+								<th id="c17"><div>2</div><div>1</div><div>1</div></th>
+								<th id="c18"><div>1</div><div>2</div><div>1</div></th>
+								<th id="c19"><div>5</div><div>1</div><div>1</div></th>
+								<th id="c20"><div>11</div></th>
+								<th id="c21"><div>1</div></th>
+								<th id="c22"><div>2</div></th>
+								<th id="c23"><div>1</div></th>
+								<th id="c24"><div>0</div></th>
+
+							</tr>
+
+						</table>
+
+						</th>
+
+					</tr>
+
+					<tr>
+
+						<th>
+
+						<table id="row_table" cellspacing="0" style="width:100%; margin: 0px;" >
+
+							<tr>
+								
+								<th id="r1">2 2</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r2">1 1 1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r3">1 1 1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r4">1 8 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r5">1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r6">1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r7">3 3</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r8">1 1 1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r9">1 1 2 1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r10">1 6 7</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r11">2 1 1 1 1 1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r12">1 1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r13">1 2 2 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r14">1 2 2 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r15">1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r16">1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r17">1 4 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r18">1 1</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r19">3 3</th>
+
+							</tr>
+
+							<tr>
+								
+								<th id="r20">4</th>
+
+							</tr>
+
+						</table>
+
+						</th>
+
+						<th>
+
+					<table id="picture_table" cellspacing="0"></table>
+
+						</th>
+
+					</tr>
+
+				</table>
+
+				<div id="genius"><img src="flower.png">ジーニアス<img src="flower.png"></div> 
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
