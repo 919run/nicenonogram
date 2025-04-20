@@ -67,11 +67,11 @@ $(document).ready(function(){
 
 		if(clear != true) {
 
-			if($(this).css("background") != "rgb(255, 75, 168)") {
+			if($(this).css("background-color") != "rgb(255, 75, 168)") {
 
 				//marking the pixel
 
-				$(this).css({"background":"#ff4ba8"});
+				$(this).css({"background-color":"#ff4ba8"});
 
 				//counting filled and empty pixels
 
@@ -180,7 +180,7 @@ $(document).ready(function(){
 
 				//if marked pixel is clicked
 
-				if($(this).css("background") == "rgb(255, 75, 168)") {
+				if($(this).css("background-color") == "rgb(255, 75, 168)") {
 
 					pe = false;
 
@@ -220,7 +220,7 @@ $(document).ready(function(){
 
 				//setting unfilled mark
 
-				if($(this).css("background") != "rgba(195, 195, 255, 0.98)") {
+				if($(this).css("background-color") != "rgba(195, 195, 255, 0.98)") {
 
 					$(this).css({"background-color":"rgba(195, 195, 255, 0.98)"});
 
