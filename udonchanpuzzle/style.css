@@ -172,3 +172,45 @@ body {
 	margin: 80px;
 
 }
+
+@media (max-width: 1500px) {
+
+	#right_flowers, #left_flowers {
+
+		display: none;
+
+	}
+
+
+}
+
+@media (max-width: 900px) {
+
+	#cp_count_mark, #ucp_count_mark {
+
+  	font-size: 20px;
+
+	}
+
+
+	#numbers_table th {
+
+  	width: 2%;
+  	height: 2%;
+
+	}
+
+	#numbers_table  #row_table th {
+
+  	min-width: 98px;
+  	height: 18.2px;
+
+	}
+
+	#game_container {
+	
+  	font-size: 77%;
+
+	}
+
+}
