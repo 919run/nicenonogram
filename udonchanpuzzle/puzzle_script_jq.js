@@ -155,7 +155,11 @@ $(document).ready(function(){
 				$("#column_table").animate({opacity: 0}, 2000);
 				$("#row_table").animate({opacity: 0}, 2000);
 				$("#top_buttons").animate({opacity: 0}, 2000);
-				
+
+				$("#numbers_table").css({"position":"relative"});
+				$("#numbers_table").animate({right: '60px'}, 2000);
+				$("#genius").css({"position":"relative"});
+				$("#genius").animate({right: '60px'}, 2000);
 			}
 
 		}
